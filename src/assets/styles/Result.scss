@@ -1,0 +1,56 @@
+table {
+  width: 100%;
+
+  &:last-child {
+    background: blue;
+  }
+}
+
+tr {
+  &:last-child {
+    position: relative;
+    border-top: 3px solid #f4f5f5;
+  }
+}
+
+td {
+  padding: 5px 0;
+}
+
+.euro_icon {
+  fill: rgba(0, 0, 0, 0.8);
+  width: 20px;
+  height: 20px;
+}
+
+.table-panel {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+.btn-back {
+  margin-top: 10px;
+  border-color: $darkAccent;
+  color: $darkAccent;
+  border-radius: 3px;
+
+  &:hover {
+    background: $darkAccent;
+    color: white;
+  }
+}
+
+.table-head {
+  color: $darkShades;
+}
+
+.value {
+  text-align: right;
+}
+
+.calc-row {
+  padding: 0 55px;
+}

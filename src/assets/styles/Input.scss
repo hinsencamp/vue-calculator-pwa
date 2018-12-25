@@ -1,0 +1,46 @@
+.input-wrapper {
+  position: relative;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+  label {
+    margin: 5px 0;
+  }
+}
+
+.input {
+  border-radius: 4px;
+  height: 48px;
+  padding-left: 5px;
+  color: #333;
+  border: 1px solid rgba(60, 60, 60, 0.26);
+}
+
+.radio {
+  margin-right: 10px;
+}
+
+.v-select {
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+}
+
+.v-select ::after {
+  border-left: 0;
+  border-right: 0;
+}
+
+.alert {
+  background: #202f7c;
+  color: #fcfaf6;
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  padding: 5px;
+  margin-top: 5px;
+}

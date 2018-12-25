@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background: $lightShades;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  font-weight: bold;
+  height: 48px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  background-color: $lightAccent;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+
+  &:disabled {
+    background: $darkShades;
+    opacity: 0.65;
+  }
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+main {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}

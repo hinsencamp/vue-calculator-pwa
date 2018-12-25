@@ -1,0 +1,20 @@
+.form {
+  height: 200px;
+}
+
+.submit-btn {
+  display: inline-block;
+  font-weight: bold;
+  /* color: $body-color; */
+  background-color: $lightAccent;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+
+  &:disabled {
+    background: $darkShades;
+    opacity: 0.65;
+  }
+}
