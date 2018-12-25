@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <main>
-      <div>foo</div>
+      <div>Income Tax Calculator</div>
     </main>
   </div>
 </template>
