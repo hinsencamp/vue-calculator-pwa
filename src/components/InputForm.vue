@@ -7,6 +7,7 @@
       v-model="inputs.incomeValue"
       @input="input"
     />
+
   </form>
 </template>
 
@@ -24,6 +25,13 @@ export default {
         incomeValue: ""
       }
     };
+  },
+  methods: {
+    input: function(input) {
+      if (input.type === "input") {
+        this.incomeValue = input.value;
+      }
+    }
   }
 };
 </script>
