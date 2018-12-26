@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
+
   label {
     margin: 5px 0;
   }
@@ -13,14 +14,16 @@
 .input {
   border-radius: 4px;
   font-size: 16px;
-  height: 48px;
-  padding-left: 5px;
+  height: 34px;
+  padding: 0px;
+  padding-left: 7px;
   color: #333;
   border: 1px solid rgba(60, 60, 60, 0.26);
 }
 
 .radio {
   margin-right: 10px;
+  padding: 0 5px;
 }
 
 .v-select {
@@ -41,8 +44,9 @@
   font-weight: bold;
   display: inline-block;
   position: absolute;
-  top: 80px;
+  border-radius: 3px;
+  top: 63px;
   border-radius: 3px;
   padding: 5px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
