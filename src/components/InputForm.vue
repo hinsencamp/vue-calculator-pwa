@@ -1,5 +1,5 @@
 <template>
-  <form class="form">
+  <form @submit.prevent="handleSubmit">
     <Input
       type="input"
       label="Gross Salary"
@@ -12,7 +12,7 @@
       label="Year"
       validation="required"
       :options="options.year"
-      v-model="inputs.yearValue"
+      v-model="inputs.year"
     />
 
     <Input
@@ -38,6 +38,13 @@
       :options="options.relationship"
       v-model="inputs.relationship"
     />
+    <button
+      class='submit-btn'
+      :disabled="!isEnabled"
+      type="submit"
+    >
+      Calculate!
+    </button>
   </form>
 </template>
 
@@ -53,7 +60,7 @@ export default {
     return {
       inputs: {
         incomeValue: "",
-        yearValue: "",
+        year: "",
         isInChurch: "",
         stateOfResidence: "",
         relationship: ""
@@ -79,11 +86,27 @@ export default {
       }
     };
   },
+
+  computed: {
+    isEnabled: function() {
+      return !!Object.values(this.inputs).every(Boolean);
+    }
+  },
   methods: {
     input: function(input) {
       if (input.type === "input") {
         this.incomeValue = input.value;
       }
+    },
+    handleSubmit: function() {
+      const { isInChurch, stateOfResidence, year } = this.inputs;
+      const inputValues = {
+        ...this.inputs,
+        year: year.value,
+        isInChurch: isInChurch.value,
+        stateOfResidence: stateOfResidence.value
+      };
+      this.$emit("submitted", inputValues);
     }
   }
 };
