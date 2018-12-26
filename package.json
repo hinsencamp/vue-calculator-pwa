@@ -12,7 +12,8 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "vee-validate": "^2.1.4",
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "vue-select": "^2.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
