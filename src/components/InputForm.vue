@@ -4,6 +4,8 @@
       type="input"
       label="Net Income"
       validation="required|numeric"
+      v-model="inputs.incomeValue"
+      @input="input"
     />
   </form>
 </template>
@@ -15,6 +17,13 @@ export default {
   name: "InputForm",
   components: {
     Input
+  },
+  data() {
+    return {
+      inputs: {
+        incomeValue: ""
+      }
+    };
   }
 };
 </script>
