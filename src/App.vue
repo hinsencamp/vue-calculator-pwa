@@ -5,7 +5,6 @@
         class="calculator-panel"
         headline="Income Tax Calculator"
       >
-
         <template>
           <transition
             name="alert-in"
@@ -23,12 +22,10 @@
               :results="calculations"
             />
           </transition>
-
         </template>
-</Panel>
-
-</main>
-</div>
+      </Panel>
+    </main>
+  </div>
 </template>
 
 <script>
@@ -61,13 +58,13 @@ export default {
       this.calculations = {
         grossIncome: { label: "Gross Salary", value: calcValues.incomeValue },
         tax: { label: "Income Tax", value: -calcValues.incomeTax },
-        soli: { label: "Church Tax", value: -calcValues.churchTax },
-        churchTax: { label: "Solidarity Charge", value: -calcValues.soli },
+        churchTax: { label: "Church Tax", value: -calcValues.churchTax },
+        soli: { label: "Solidarity Charge", value: -calcValues.soli },
         netIncome: { label: "Net Salary", value: calcValues.netIncome }
       };
     },
     clearCalculations: function() {
-      this.calculations = "";
+      this.calculations = {};
     }
   }
 };
