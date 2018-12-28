@@ -1,5 +1,5 @@
 <template>
-  <form class="form">
+  <form>
     <Input
       type="input"
       label="Gross Salary"
