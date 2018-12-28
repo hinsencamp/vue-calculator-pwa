@@ -112,11 +112,11 @@ const calcSoli = (taxableValue, relationship) => {
 };
 
 const calcTaxes = inputs => {
-  const incomeValue = parseInt(input.incomeValue);
-  const incomeTax = calcIncomeTax(incomeValue, input.relationship);
-  const soli = calcSoli(incomeTax, input.relationship);
-  const churchTax = input.isInChurch
-    ? calcChurchTax(incomeTax, input.stateOfResidence)
+  const incomeValue = parseInt(inputs.incomeValue);
+  const incomeTax = calcIncomeTax(incomeValue, inputs.relationship);
+  const soli = calcSoli(incomeTax, inputs.relationship);
+  const churchTax = inputs.isInChurch
+    ? calcChurchTax(incomeTax, inputs.stateOfResidence)
     : 0;
   const netIncome = ((incomeValue - incomeTax - soli - churchTax) * 100) / 100;
 
