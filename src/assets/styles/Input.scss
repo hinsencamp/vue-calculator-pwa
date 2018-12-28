@@ -14,7 +14,7 @@
 .input {
   border-radius: 4px;
   font-size: 16px;
-  height: 34px;
+  height: 44px;
   padding: 0px;
   padding-left: 7px;
   color: #333;
@@ -30,6 +30,10 @@
   width: 100%;
   background: white;
   border-radius: 3px;
+
+  input {
+    height: 37px;
+  }
 }
 
 .v-select ::after {
@@ -45,7 +49,7 @@
   display: inline-block;
   position: absolute;
   border-radius: 3px;
-  top: 63px;
+  top: 74px;
   border-radius: 3px;
   padding: 5px;
   margin-top: 7px;
