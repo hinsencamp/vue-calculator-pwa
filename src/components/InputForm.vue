@@ -2,7 +2,7 @@
   <form class="form">
     <Input
       type="input"
-      label="Net Income"
+      label="Gross Salary"
       validation="required|numeric"
       v-model="inputs.incomeValue"
       @input="input"
