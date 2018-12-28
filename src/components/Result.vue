@@ -6,12 +6,12 @@
         <th class="value">Value</th>
       </tr>
       <tr
-        v-for='element in results'
-        :key="element.label"
+        v-for='result in results'
+        :key="result.label"
       >
-        <td>{{element.label}}</td>
+        <td>{{result.label}}</td>
         <td class="value">
-          {{element.value}}
+          {{result.value}}
         </td>
       </tr>
     </table>
