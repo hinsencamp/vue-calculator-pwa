@@ -1,15 +1,16 @@
 table {
   width: 100%;
+}
 
-  &:last-child {
-    background: blue;
-  }
+th {
+  text-align: left;
 }
 
 tr {
-  &:last-child {
+  &:last-child td {
     position: relative;
     border-top: 3px solid #f4f5f5;
+    font-weight: bold;
   }
 }
 
@@ -36,6 +37,8 @@ td {
   border-color: $darkAccent;
   color: $darkAccent;
   border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 15px;
 
   &:hover {
     background: $darkAccent;
