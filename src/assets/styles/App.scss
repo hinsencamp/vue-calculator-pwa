@@ -1,8 +1,25 @@
 @import "../../../node_modules/animate.css/animate.min.css";
 
+html {
+  // overflow: hidden;
+}
+
 body {
   margin: 0;
   background: $lightShades;
+
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  position: static;
+  @media only screen and (min-width: 812px) {
+    overflow: auto;
+  }
 }
 
 h2 {
@@ -36,10 +53,16 @@ h2 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height: inherit;
 }
 
 main {
-  margin: 40px 0;
+  height: inherit;
   display: flex;
   justify-content: center;
+  /* Medium devices (landscape tablets, 812px and up) */
+  @media only screen and (min-width: 812px) {
+    margin: 40px 0;
+    height: auto;
+  }
 }

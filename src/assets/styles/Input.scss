@@ -4,7 +4,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 30px;
+
+  margin-bottom: 25px;
+
+  @media only screen and (min-width: 812px) {
+    margin-bottom: 30px;
+  }
 
   label {
     margin: 5px 0;
@@ -15,6 +20,7 @@
   border-radius: 4px;
   font-size: 16px;
   height: 44px;
+  min-height: 44px;
   padding: 0px;
   padding-left: 7px;
   color: #333;

@@ -13,3 +13,24 @@
     opacity: 0.65;
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: baseline;
+
+  /* Medium devices (landscape tablets, 812px and up) */
+  @media only screen and (min-width: 812px) {
+    height: 100%;
+  }
+
+  button {
+    margin-top: auto;
+    margin-bottom: 15px;
+
+    @media only screen and (min-width: 812px) {
+      margin-top: 0;
+    }
+  }
+}
